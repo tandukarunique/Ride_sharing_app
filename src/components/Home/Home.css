@@ -1,0 +1,42 @@
+.body-overlay {
+  background-image: url("../../assets/Assets/background.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 0rem 4rem;
+}
+.logo {
+  position: absolute;
+
+  position: sticky;
+}
+.logo img {
+  max-height: 200px;
+  max-width: 250px;
+}
+.logo svg {
+  padding: 5px;
+  font-size: 40px;
+}
+.logo svg:hover {
+  cursor: pointer;
+  color: rgb(188, 129, 196);
+}
+@media (max-width: 280px) {
+  .logo img {
+    max-height: 70px; /* Further reduce the image size */
+    max-width: 90px;
+    padding-left: 0px 0px 0px 0px !important;
+  }
+
+  .logo svg {
+    font-size: 20px; /* Further reduce the icon size */
+  }
+}
