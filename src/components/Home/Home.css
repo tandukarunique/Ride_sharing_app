@@ -71,36 +71,83 @@
   gap: 45px;
   /* flex-wrap: wrap; */
 }
-.header-items a{
-    font-size: 30px;
-    font-family:sans-serif;
-    font-weight: 600;
-    text-decoration: none;
+.header-items a {
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 600;
+  text-decoration: none;
 }
-.header-items a:hover{
-    color: rgb(53, 10, 53);
-    transform: scaleX(1.1); 
+.header-items a:hover {
+  color: rgb(53, 10, 53);
+  transform: scaleX(1.1);
 }
 @media (max-width: 768px) {
-    .header-items {
-      flex-direction: column; /* Stack items vertically on smaller screens */
-      align-items: center; /* Center the items */
-      padding: 1rem; /* Adjust padding */
-      gap: 20px; /* Reduce spacing between items */
-    }
-  
-    .header-items a {
-      font-size: 24px; /* Reduce font size for smaller screens */
-    }
+  .header-items {
+    flex-direction: row; /* Stack items horizontally on smaller screens */
+    align-items: center;
+    padding: 1rem; /* Adjust padding */
+    gap: 5px;
   }
-  
-  @media (max-width: 480px) {
-    .header-items {
-      padding: 0.5rem; /* Further adjust padding for very small screens */
-      gap: 15px; /* Minimize gap between items */
-    }
-  
-    .header-items a {
-      font-size: 20px; /* Further reduce font size */
-    }
+
+  .header-items a {
+    font-size: 24px;
   }
+}
+
+@media (max-width: 480px) {
+  .header-items {
+    padding: 0.5rem;
+    gap: 15px;
+  }
+
+  .header-items a {
+    font-size: 20px;
+  }
+}
+/*Home*/
+.home {
+  align-items: center;
+}
+.home-container {
+  position: relative;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.home-container h1 {
+  font-size: 10rem;
+  font-family: sans-serif;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 480px) {
+  .home-container h1 {
+    font-size: 3rem;
+  }
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  justify-content: center;
+}
+.home-container .buttons .btn {
+  background-color: rgb(156, 73, 189);
+  padding: 1.5rem;
+  max-width: 400px;
+  width: 400px;
+  font-size: 25px;
+  border-radius: 20px;
+  color: white;
+}
+.home-container .buttons .btn svg {
+  padding: 0px 30px 0px 5px;
+  font-size: 28px;
+}
+.home-container .buttons :hover {
+  cursor: pointer;
+  transform: scaleX(1.1);
+}
