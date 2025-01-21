@@ -11,11 +11,12 @@
   flex-direction: row;
   flex-wrap: wrap;
   padding: 2rem 2rem 0rem 4rem;
+  justify-content: space-between;
 }
 .logo {
-  position: absolute;
+  /* position: absolute; */
 
-  position: sticky;
+  position: -webkit-sticky;
 }
 .logo img {
   max-height: 200px;
@@ -29,14 +30,77 @@
   cursor: pointer;
   color: rgb(188, 129, 196);
 }
-@media (max-width: 280px) {
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row; /* Stack items vertically */
+    align-items: left; /* Center align items */
+    padding: 0px;
+  }
+
   .logo img {
-    max-height: 70px; /* Further reduce the image size */
-    max-width: 90px;
-    padding-left: 0px 0px 0px 0px !important;
+    max-height: 150px;
+    max-width: 200px;
   }
 
   .logo svg {
-    font-size: 20px; /* Further reduce the icon size */
+    font-size: 30px;
   }
 }
+
+/* For small screens (mobile, 480px and smaller) */
+@media (max-width: 480px) {
+  .container {
+    padding: 1rem; /* Reduce padding for mobile screens */
+  }
+
+  .logo img {
+    max-height: 70px; /* Reduce image size for small screens */
+    max-width: 90px;
+    padding: 0 !important; /* Remove additional padding */
+  }
+
+  .logo svg {
+    font-size: 20px; /* Reduce the size of icons */
+  }
+}
+.header-items {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 1rem 6rem 1rem 1rem;
+  gap: 45px;
+  /* flex-wrap: wrap; */
+}
+.header-items a{
+    font-size: 30px;
+    font-family:sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.header-items a:hover{
+    color: rgb(53, 10, 53);
+    transform: scaleX(1.1); 
+}
+@media (max-width: 768px) {
+    .header-items {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center the items */
+      padding: 1rem; /* Adjust padding */
+      gap: 20px; /* Reduce spacing between items */
+    }
+  
+    .header-items a {
+      font-size: 24px; /* Reduce font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-items {
+      padding: 0.5rem; /* Further adjust padding for very small screens */
+      gap: 15px; /* Minimize gap between items */
+    }
+  
+    .header-items a {
+      font-size: 20px; /* Further reduce font size */
+    }
+  }

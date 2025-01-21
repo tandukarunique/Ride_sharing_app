@@ -1,0 +1,22 @@
+.flag-icon {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.country-select__control {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.country-select__menu {
+  z-index: 10;
+}
+
+.country-select__option {
+  display: flex;
+  align-items: center;
+}
