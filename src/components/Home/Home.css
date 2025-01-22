@@ -232,7 +232,7 @@
 
 .stat-card p {
   font-size: 1.8rem;
-  color: #666; /* Subtle gray for descriptions */
+  color: #666;
   margin: 0;
   font-family: sans-serif;
 }
@@ -252,10 +252,10 @@
     content: "";
     width: 1px;
     height: 60%;
-    background-color: #ddd; /* Vertical line color */
+    background-color: #ddd;
     position: absolute;
     right: 0;
-    top: 15%; /* Center the line vertically */
+    top: 15%;
   }
 }
 
@@ -282,24 +282,24 @@
   gap: 1rem;
 }
 .left-align img {
-  width: 51rem; /* Default width for all images */
-  height: auto; /* Maintain aspect ratio */
+  width: 51rem;
+  height: auto;
 }
 
 .left-align img:nth-child(2),
 .left-align img:nth-child(3) {
-  width: 25rem; /* Increase size for Image2 and Image3 */
+  width: 25rem;
 }
 
 .left-align img:nth-child(1) {
-  grid-column: 1 / span 2; /* Makes Image1 span both columns */
-  margin-bottom: 1rem; /* Adds extra space below Image1 */
+  grid-column: 1 / span 2;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
   .left-align {
-    padding-left: 1.5rem; /* Reduce padding for smaller screens */
-    justify-content: center; /* Center align the grid */
+    padding-left: 1.5rem;
+    justify-content: center;
   }
 
   .left-align img {
@@ -315,9 +315,9 @@
 /* Responsiveness for Small Screens (Mobile) */
 @media (max-width: 480px) {
   .left-align {
-    grid-template-columns: 1fr; /* Stack all images in a single column */
-    padding-left: 0; /* Remove left padding */
-    justify-content: center; /* Center align images */
+    grid-template-columns: 1fr;
+    padding-left: 0;
+    justify-content: center;
   }
 
   .left-align img {
@@ -353,22 +353,21 @@
 
 @media (max-width: 1500px) {
   .aligns {
-    flex-direction: column; /* Stack the left and right sections vertically */
     align-items: center;
   }
 
   .right-align {
     padding-left: 0;
-    padding-top: 2rem; /* Add spacing at the top for better separation */
+    padding-top: 2rem;
   }
 
   .right-align h2 {
-    font-size: 30px; /* Adjust heading size for medium screens */
-    text-align: left; /* Center-align text for better appearance */
+    font-size: 30px;
+    text-align: left;
   }
 
   .right-align p {
-    font-size: 22px; /* Adjust paragraph size for medium screens */
+    font-size: 22px;
     text-align: left;
   }
 }
@@ -497,4 +496,85 @@
 
     max-width: 10rem;
   }
+}
+
+.ride-made {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+.ride-made .rh1 {
+  font-size: 7rem;
+  color: #212121;
+  margin-bottom: 40px;
+}
+
+.ride-made .ride-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.ride-made.ride-container img {
+  flex: 1;
+  max-width: 30%;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.steps-container {
+  flex: 1;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid #4f46e5;
+  color: #4f46e5;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 35px;
+  margin-right: 15px;
+  margin-top: 2rem;
+  background-color: #dfc8f0;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #212121;
+  margin: 0 0 5px;
+  font-family: sans-serif;
+  padding-top: 2rem;
+}
+
+.step-description {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.6;
+  font-family: sans-serif;
 }

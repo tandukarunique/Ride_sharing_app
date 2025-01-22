@@ -18,6 +18,7 @@ import car from "../../assets/Assets/car.png";
 import bike from "../../assets/Assets/bike.png";
 import jeep from "../../assets/Assets/jeep.png";
 import truck from "../../assets/Assets/truck.png";
+import ride_bg from "../../assets/Assets/ride_bg.png";
 
 const Home = () => {
   return (
@@ -55,41 +56,41 @@ const Home = () => {
             </div>
             <img src={home_phonebg} className="phone_bg" alt="" />
             <div className="stats-container">
-              <div class="stat-card">
-                <div class="icon">
+              <div className="stat-card">
+                <div className="icon">
                   <FaCar />
                 </div>
-                <div class="text">
+                <div className="text">
                   <h2>10,000 K</h2>
                   <p>Completed Rides</p>
                 </div>
               </div>
 
-              <div class="stat-card">
-                <div class="icon">
+              <div className="stat-card">
+                <div className="icon">
                   <FaUser />
                 </div>
-                <div class="text">
+                <div className="text">
                   <h2>2,000 K</h2>
                   <p>Active Riders</p>
                 </div>
               </div>
 
-              <div class="stat-card">
-                <div class="icon">
+              <div className="stat-card">
+                <div className="icon">
                   <FaCar />
                 </div>
-                <div class="text">
+                <div className="text">
                   <h2>500 K</h2>
                   <p>Active Drivers</p>
                 </div>
               </div>
 
-              <div class="stat-card">
-                <div class="icon">
+              <div className="stat-card">
+                <div className="icon">
                   <FaTimesCircle />
                 </div>
-                <div class="text">
+                <div className="text">
                   <h2>1.5 %</h2>
                   <p>Cancel Ratio</p>
                 </div>
@@ -159,6 +160,57 @@ const Home = () => {
                   <div className="image-container">
                     <img src={truck} alt="Truck" />
                     <div className="overlay-text">Truck</div>
+                  </div>
+                </div>
+              </div>
+              <div className="ride-made">
+                <h1 className="rh1">Ride Made Simple</h1>
+                <div className="ride-container">
+                  <img src={ride_bg} />
+
+                  <div class="steps-container">
+                    <div class="step">
+                      <div class="step-number">1</div>
+                      <div class="step-content">
+                        <div class="step-title">Sign up & Verify</div>
+                        <div class="step-description">
+                          Create an account as a rider or driver. Verification
+                          ensures a safe and reliable community.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">2</div>
+                      <div class="step-content">
+                        <div class="step-title">Request & Bid</div>
+                        <div class="step-description">
+                          Riders enter their trip details, and drivers submit
+                          competitive bids. Riders can compare offers based on
+                          price and ratings.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">3</div>
+                      <div class="step-content">
+                        <div class="step-title">Select & Ride</div>
+                        <div class="step-description">
+                          Riders choose their preferred driver based on the bids
+                          received and enjoy a comfortable ride.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step">
+                      <div class="step-number">4</div>
+                      <div class="step-content">
+                        <div class="step-title">Payment & Feedback</div>
+                        <div class="step-description">
+                          Secure payment is processed through the app, and both
+                          parties can rate each other, enhancing trust and
+                          service quality.
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
