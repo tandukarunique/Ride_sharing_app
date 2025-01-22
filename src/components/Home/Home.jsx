@@ -14,6 +14,10 @@ import instant from "../../assets/Assets/instant.png";
 import realtime from "../../assets/Assets/realtime.png";
 import multiple from "../../assets/Assets/multiple.png";
 import affordable from "../../assets/Assets/affordable.png";
+import car from "../../assets/Assets/car.png";
+import bike from "../../assets/Assets/bike.png";
+import jeep from "../../assets/Assets/jeep.png";
+import truck from "../../assets/Assets/truck.png";
 
 const Home = () => {
   return (
@@ -50,7 +54,7 @@ const Home = () => {
               </button>
             </div>
             <img src={home_phonebg} className="phone_bg" alt="" />
-            <div class="stats-container">
+            <div className="stats-container">
               <div class="stat-card">
                 <div class="icon">
                   <FaCar />
@@ -135,6 +139,27 @@ const Home = () => {
                     Ride within your budget with no hidden fees. Ride within
                     your budget
                   </p>
+                </div>
+              </div>
+              <div className="wide-range">
+                <h1 className="wide-h1">Wide Range of Vechicles</h1>
+                <div className="wide-images">
+                  <div className="image-container">
+                    <img src={car} alt="Car" />
+                    <div className="overlay-text">Car</div>
+                  </div>
+                  <div className="image-container">
+                    <img src={bike} alt="Bike" />
+                    <div className="overlay-text">Bike</div>
+                  </div>
+                  <div className="image-container">
+                    <img src={jeep} alt="Jeep" />
+                    <div className="overlay-text">Jeep</div>
+                  </div>
+                  <div className="image-container">
+                    <img src={truck} alt="Truck" />
+                    <div className="overlay-text">Truck</div>
+                  </div>
                 </div>
               </div>
             </div>
