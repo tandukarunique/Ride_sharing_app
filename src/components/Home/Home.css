@@ -303,12 +303,12 @@
   }
 
   .left-align img {
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .left-align img:nth-child(2),
   .left-align img:nth-child(3) {
-    width: 100% 
+    width: 100%;
   }
 }
 
@@ -327,5 +327,71 @@
   .left-align img:nth-child(2),
   .left-align img:nth-child(3) {
     max-width: 400px; /* Stack and fit Image2 and Image3 below each other */
+  }
+}
+
+.aligns {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.right-align {
+  padding-left: 9rem;
+}
+.right-align h2 {
+  font-size: 35px;
+  font-family: sans-serif;
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right-align p {
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .aligns {
+    flex-direction: column; /* Stack the left and right sections vertically */
+    align-items: left;
+  }
+
+  .right-align {
+    padding-left: 0;
+    padding-top: 2rem; /* Add spacing at the top for better separation */
+  }
+
+  .right-align h2 {
+    font-size: 30px; /* Adjust heading size for medium screens */
+    text-align: left; /* Center-align text for better appearance */
+  }
+
+  .right-align p {
+    font-size: 22px; /* Adjust paragraph size for medium screens */
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-align h2 {
+    font-size: 25px;
+    padding-top: 1rem;
+  }
+
+  .right-align p {
+    font-size: 18px;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-align h2 {
+    font-size: 20px;
+  }
+
+  .right-align p {
+    font-size: 16px;
+    text-align: left;
   }
 }

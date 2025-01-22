@@ -10,6 +10,10 @@ import home_phonebg from "../../assets/Assets/home_phonebg.png";
 import image1 from "../../assets/Assets/image1.png";
 import image2 from "../../assets/Assets/image2.png";
 import image3 from "../../assets/Assets/image3.png";
+import instant from "../../assets/Assets/instant.png";
+import realtime from "../../assets/Assets/realtime.png";
+import multiple from "../../assets/Assets/multiple.png";
+import affordable from "../../assets/Assets/affordable.png";
 
 const Home = () => {
   return (
@@ -89,35 +93,49 @@ const Home = () => {
             </div>
             <div className="home2">
               <h1 className="home2-h">Ride Smarter, Ride Better</h1>
-              <div className="left-align">
-                <img src={image1} alt="" />
-                <img src={image2} alt="" />
-                <img src={image3} alt="" />
-              </div>
-              <div className="right-align">
-                <h2>Instant Booking</h2>
-                <p>
-                  Get a ride on demand with just a few taps. Choose your vehicle
-                  and book instantly!ew taps. Choose your vehicle and book
-                  instantly!
-                </p>
-                <h2>Real Time Tracking</h2>
-                <p>
-                  Track your driver’s location in real-time and know exactly
-                  when your ride will arrive.eal-time and know exactly when your
-                  ride will arrive.
-                </p>
-                <h2>Multiple Payment Option</h2>
-                <p>
-                  Pay your way with flexible options, including cash, card, and
-                  digital wallets including cash, card, and digital wallets
-                </p>
-                <h2>Affordable Pricing</h2>
-                <p>
-                  Enjoy transparent, affordable fares with no hidden fees. Ride
-                  within your budget with no hidden fees. Ride within your
-                  budget
-                </p>
+              <div className="aligns">
+                <div className="left-align">
+                  <img src={image1} alt="" />
+                  <img src={image2} alt="" />
+                  <img src={image3} alt="" />
+                </div>
+                <div className="right-align">
+                  <h2>
+                    <img src={instant} /> Instant Booking
+                  </h2>
+                  <p>
+                    Get a ride on demand with just a few taps. Choose your
+                    vehicle and book instantly!ew taps. Choose your vehicle and
+                    book instantly!
+                  </p>
+                  <h2>
+                    <img src={realtime} />
+                    Real Time Tracking
+                  </h2>
+                  <p>
+                    Track your driver’s location in real-time and know exactly
+                    when your ride will arrive.eal-time and know exactly when
+                    your ride will arrive.
+                  </p>
+                  <h2>
+                    <img src={multiple} />
+                    Multiple Payment Option
+                  </h2>
+                  <p>
+                    Pay your way with flexible options, including cash, card,
+                    and digital wallets including cash, card, and digital
+                    wallets
+                  </p>
+                  <h2>
+                    <img src={affordable} />
+                    Affordable Pricing
+                  </h2>
+                  <p>
+                    Enjoy transparent, affordable fares with no hidden fees.
+                    Ride within your budget with no hidden fees. Ride within
+                    your budget
+                  </p>
+                </div>
               </div>
             </div>
           </div>
