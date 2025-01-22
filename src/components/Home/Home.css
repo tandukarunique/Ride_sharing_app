@@ -69,7 +69,6 @@
   position: relative;
   padding: 1rem 6rem 1rem 1rem;
   gap: 45px;
-  /* flex-wrap: wrap; */
 }
 .header-items a {
   font-size: 30px;
@@ -133,6 +132,7 @@
   flex-direction: row;
   gap: 5rem;
   justify-content: center;
+  padding: 0.75rem 1.5rem;
 }
 .home-container .buttons .btn {
   background-color: rgb(156, 73, 189);
@@ -143,11 +143,189 @@
   border-radius: 20px;
   color: white;
 }
-.home-container .buttons .btn svg {
-  padding: 0px 30px 0px 5px;
-  font-size: 28px;
-}
+
 .home-container .buttons :hover {
   cursor: pointer;
   transform: scaleX(1.1);
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  .home-container .buttons .btn {
+    max-width: 250px;
+    max-height: 70px;
+    font-size: 20px;
+    display: flex;
+    margin: -2rem 0;
+  }
+
+  .home-container .buttons .btn svg {
+    font-size: 18px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .home-container .buttons .btn {
+    max-width: 250px;
+    padding-bottom: 3rem;
+    max-height: 70px;
+    display: flex;
+  }
+
+  .home-container .buttons .btn svg {
+    font-size: 16px;
+  }
+}
+.phone_bg {
+  max-width: 100%;
+  width: 95%;
+  height: auto;
+  padding: 15px;
+  padding-top: 3rem;
+}
+
+/**/
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  width: 300px;
+  max-width: 100%;
+  gap: 15px;
+}
+
+.stat-card:not(:last-child) {
+  border-right: 1px solid #ddd;
+  padding-right: 3rem;
+}
+
+.stat-card .icon {
+  font-size: 3.5rem;
+  color: #6a4df5;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+  color: #2d2d2d;
+  margin: 0;
+}
+
+.stat-card p {
+  font-size: 1.8rem;
+  color: #666; /* Subtle gray for descriptions */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    justify-content: center;
+    row-gap: 0px;
+  }
+
+  .stat-card {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+  }
+  .stat-card:not(:last-child)::after {
+    content: "";
+    width: 1px;
+    height: 60%;
+    background-color: #ddd; /* Vertical line color */
+    position: absolute;
+    right: 0;
+    top: 15%; /* Center the line vertically */
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    width: 100%;
+    border-right: none;
+    display: flex;
+  }
+}
+.home2 {
+  position: relative;
+  align-items: center;
+}
+.home2 .home2-h {
+  font-size: 6.5rem;
+}
+.left-align {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-content: left;
+  padding-left: 3rem;
+  gap: 1rem;
+}
+.left-align img {
+  width: 51rem; /* Default width for all images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.left-align img:nth-child(2),
+.left-align img:nth-child(3) {
+  width: 25rem; /* Increase size for Image2 and Image3 */
+}
+
+.left-align img:nth-child(1) {
+  grid-column: 1 / span 2; /* Makes Image1 span both columns */
+  margin-bottom: 1rem; /* Adds extra space below Image1 */
+}
+
+@media (max-width: 768px) {
+  .left-align {
+    padding-left: 1.5rem; /* Reduce padding for smaller screens */
+    justify-content: center; /* Center align the grid */
+  }
+
+  .left-align img {
+    max-width: 100%; 
+  }
+
+  .left-align img:nth-child(2),
+  .left-align img:nth-child(3) {
+    width: 100% 
+  }
+}
+
+/* Responsiveness for Small Screens (Mobile) */
+@media (max-width: 480px) {
+  .left-align {
+    grid-template-columns: 1fr; /* Stack all images in a single column */
+    padding-left: 0; /* Remove left padding */
+    justify-content: center; /* Center align images */
+  }
+
+  .left-align img {
+    max-width: 400px;
+  }
+
+  .left-align img:nth-child(2),
+  .left-align img:nth-child(3) {
+    max-width: 400px; /* Stack and fit Image2 and Image3 below each other */
+  }
 }

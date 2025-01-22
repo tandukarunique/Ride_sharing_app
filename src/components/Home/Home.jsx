@@ -4,7 +4,12 @@ import logo_header from "../../assets/Assets/logo_header.png";
 import { AiOutlineBars } from "react-icons/ai";
 import Header from "../Header/Header";
 import { FaUser } from "react-icons/fa";
+import { FaTimesCircle } from "react-icons/fa";
 import { FaCar } from "react-icons/fa";
+import home_phonebg from "../../assets/Assets/home_phonebg.png";
+import image1 from "../../assets/Assets/image1.png";
+import image2 from "../../assets/Assets/image2.png";
+import image3 from "../../assets/Assets/image3.png";
 
 const Home = () => {
   return (
@@ -39,6 +44,81 @@ const Home = () => {
               >
                 <FaCar /> Download driver app
               </button>
+            </div>
+            <img src={home_phonebg} className="phone_bg" alt="" />
+            <div class="stats-container">
+              <div class="stat-card">
+                <div class="icon">
+                  <FaCar />
+                </div>
+                <div class="text">
+                  <h2>10,000 K</h2>
+                  <p>Completed Rides</p>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="icon">
+                  <FaUser />
+                </div>
+                <div class="text">
+                  <h2>2,000 K</h2>
+                  <p>Active Riders</p>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="icon">
+                  <FaCar />
+                </div>
+                <div class="text">
+                  <h2>500 K</h2>
+                  <p>Active Drivers</p>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="icon">
+                  <FaTimesCircle />
+                </div>
+                <div class="text">
+                  <h2>1.5 %</h2>
+                  <p>Cancel Ratio</p>
+                </div>
+              </div>
+            </div>
+            <div className="home2">
+              <h1 className="home2-h">Ride Smarter, Ride Better</h1>
+              <div className="left-align">
+                <img src={image1} alt="" />
+                <img src={image2} alt="" />
+                <img src={image3} alt="" />
+              </div>
+              <div className="right-align">
+                <h2>Instant Booking</h2>
+                <p>
+                  Get a ride on demand with just a few taps. Choose your vehicle
+                  and book instantly!ew taps. Choose your vehicle and book
+                  instantly!
+                </p>
+                <h2>Real Time Tracking</h2>
+                <p>
+                  Track your driver’s location in real-time and know exactly
+                  when your ride will arrive.eal-time and know exactly when your
+                  ride will arrive.
+                </p>
+                <h2>Multiple Payment Option</h2>
+                <p>
+                  Pay your way with flexible options, including cash, card, and
+                  digital wallets including cash, card, and digital wallets
+                </p>
+                <h2>Affordable Pricing</h2>
+                <p>
+                  Enjoy transparent, affordable fares with no hidden fees. Ride
+                  within your budget with no hidden fees. Ride within your
+                  budget
+                </p>
+              </div>
             </div>
           </div>
         </div>
