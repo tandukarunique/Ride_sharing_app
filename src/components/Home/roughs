@@ -32,8 +32,8 @@
 }
 @media (max-width: 768px) {
   .container {
-    flex-direction: row; /* Stack items vertically */
-    align-items: left; /* Center align items */
+    flex-direction: column; 
+    align-items: left; 
     padding: 0px;
   }
 
@@ -334,6 +334,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  flex-wrap: wrap;
 }
 .right-align {
   padding-left: 9rem;
@@ -349,11 +350,13 @@
 .right-align p {
   font-size: 25px;
   font-family: sans-serif;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1500px) {
   .aligns {
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .right-align {
@@ -449,7 +452,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
   .wide-range h1 {
     font-size: 4rem;
   }
@@ -690,6 +693,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+
 .testimonial-section {
   background-color: #d9f99d; /* Light lime green */
   padding: 2rem;
@@ -714,6 +718,7 @@
   margin-bottom: 0.5rem;
   position: relative;
 }
+
 .rider-name {
   font-weight: bold;
   color: #212121;
@@ -722,6 +727,8 @@
 .rider-role {
   color: #777;
 }
+
+/* Carousel Section */
 .box-person {
   position: relative;
   display: flex;

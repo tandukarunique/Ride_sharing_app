@@ -222,7 +222,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="riders-say">
-                <h1>What Our Riders Are Saying</h1>
+                <h1 className="title">What Our Riders Are Saying</h1>
                 <div className="riders-container">
                   {/* Left image */}
                   <div className="riders-image">
@@ -252,10 +252,6 @@ const Home = () => {
                     <img src={person5} alt="Person 5" />
                   </div>
                 </div>
-              </div>
-              <div className="banner">
-                <img src={carbg} alt="" />
-                {/* <img src={phone_bg} className="phone3" alt="" /> */}
               </div>
             </div>
           </div>
