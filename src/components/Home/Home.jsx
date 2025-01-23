@@ -19,6 +19,13 @@ import bike from "../../assets/Assets/bike.png";
 import jeep from "../../assets/Assets/jeep.png";
 import truck from "../../assets/Assets/truck.png";
 import ride_bg from "../../assets/Assets/ride_bg.png";
+import person1 from "../../assets/Assets/person1.png";
+import person2 from "../../assets/Assets/person2.png";
+import person3 from "../../assets/Assets/person3.png";
+import person4 from "../../assets/Assets/person4.png";
+import person5 from "../../assets/Assets/person5.png";
+import carbg from "../../assets/Assets/carbg.png";
+import phone_bg from "../../assets/Assets/phone_bg.png";
 
 const Home = () => {
   return (
@@ -213,6 +220,42 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="riders-say">
+                <h1>What Our Riders Are Saying</h1>
+                <div className="riders-container">
+                  {/* Left image */}
+                  <div className="riders-image">
+                    <img src={person1} alt="Person 1" />
+                  </div>
+
+                  {/* Testimonial Section */}
+                  <div className="testimonial-section">
+                    <h3>"Highly Recommended"</h3>
+                    <p>
+                      I highly recommend this platform for anyone planning a
+                      move! Booking a truck was straightforward, the rates were
+                      reasonable, and the well-maintained vehicle made the
+                      entire process smooth.
+                    </p>
+                    <p className="rider-name">Alixa Hales</p>
+                    <p className="rider-role">OvoRide Rider</p>
+                  </div>
+                </div>
+
+                {/* Bottom Carousel */}
+                <div className="box-person">
+                  <div className="carousel-images">
+                    <img src={person2} alt="Person 2" />
+                    <img src={person3} alt="Person 3" />
+                    <img src={person4} alt="Person 4" />
+                    <img src={person5} alt="Person 5" />
+                  </div>
+                </div>
+              </div>
+              <div className="banner">
+                <img src={carbg} alt="" />
+                {/* <img src={phone_bg} className="phone3" alt="" /> */}
               </div>
             </div>
           </div>

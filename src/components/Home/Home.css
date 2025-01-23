@@ -334,6 +334,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  flex-wrap: wrap;
 }
 .right-align {
   padding-left: 9rem;
@@ -349,11 +350,13 @@
 .right-align p {
   font-size: 25px;
   font-family: sans-serif;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1500px) {
   .aligns {
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .right-align {
@@ -449,7 +452,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1500px) {
   .wide-range h1 {
     font-size: 4rem;
   }
@@ -577,4 +580,258 @@
   color: #555;
   line-height: 1.6;
   font-family: sans-serif;
+}
+@media (max-width: 1500px) {
+  .ride-made .rh1 {
+    font-size: 5rem;
+  }
+
+  .ride-made .ride-container img {
+    max-width: 50%;
+  }
+
+  .step-title {
+    font-size: 2rem;
+  }
+
+  .step-description {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ride-made .ride-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .ride-made .ride-container img {
+    max-width: 80%; /* Full-width images on smaller screens */
+  }
+
+  .steps-container {
+    width: 100%; /* Ensure the steps container takes full width */
+    padding: 15px;
+  }
+
+  .step-number {
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    margin-top: 1rem;
+  }
+
+  .step-title {
+    font-size: 1.8rem;
+  }
+
+  .step-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ride-made .rh1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .ride-made .ride-container img {
+    max-width: 100%; /* Full width for extra small screens */
+  }
+
+  .steps-container {
+    padding: 10px;
+  }
+
+  .step-number {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+  }
+
+  .step-description {
+    font-size: 1rem;
+  }
+}
+
+.riders-say {
+  padding: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+}
+.riders-say h1 {
+  font-size: 6rem;
+}
+
+.riders-title {
+  font-family: sans-serif;
+  margin-bottom: 3rem;
+  color: #212121;
+}
+
+/* Container Section */
+.riders-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap; /* For responsiveness */
+}
+
+.riders-image img {
+  width: 28rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.testimonial-section {
+  background-color: #d9f99d; /* Light lime green */
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  text-align: left;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.testimonial-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #212121;
+}
+
+.testimonial-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.rider-name {
+  font-weight: bold;
+  color: #212121;
+}
+
+.rider-role {
+  color: #777;
+}
+
+/* Carousel Section */
+.box-person {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0; /* Remove extra top margin if needed */
+  padding-top: 1rem;
+  margin-left: 29rem;
+  margin-top: -20rem;
+}
+
+.carousel-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #555;
+}
+
+.carousel-button:hover {
+  color: #000;
+}
+
+.carousel-images {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-images img {
+  width: 13rem;
+  height: 17rem;
+  border-radius: 15%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1500px) {
+  .riders-say h1 {
+    font-size: 5rem;
+  }
+  .riders-container {
+    flex-direction: column; /* Stack images and text vertically */
+    align-items: center;
+  }
+
+  .riders-image img {
+    width: 22rem; /* Scale down the image for smaller screens */
+  }
+
+  .testimonial-section {
+    max-width: 100%; /* Adjust to take full width */
+  }
+  .carousel-images img {
+    height: 10rem;
+    max-width: 100%;
+  }
+
+  .box-person {
+    margin-left: 0; /* Center the carousel */
+    margin-top: 0; /* Avoid overlapping margins */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-images img {
+    height: 10rem;
+    width: 4rem;
+  }
+
+  .carousel-button {
+    font-size: 1.5rem; /* Reduce button size */
+  }
+}
+
+@media (max-width: 480px) {
+  .riders-container {
+    gap: 1rem; /* Reduce gaps between items */
+  }
+
+  .riders-image img {
+    width: 18rem; /* Further scale down the image */
+  }
+
+  .testimonial-section h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .testimonial-section p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+
+  .carousel-images img {
+    width: 8rem; /* Smaller carousel images */
+    height: 10rem;
+  }
+}
+.banner {
+  padding-top: 6rem;
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+  max-height: 40rem;
+}
+.banner .phone3 {
+  position: absolute;
 }
