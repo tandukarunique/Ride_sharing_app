@@ -319,9 +319,12 @@
     padding-left: 0;
     justify-content: center;
   }
+  .home2 .home2-h {
+    font-size: 3.5rem;
+  }
 
   .left-align img {
-    max-width: 400px;
+    max-width: 350px;
   }
 
   .left-align img:nth-child(2),
@@ -334,6 +337,7 @@
   display: flex;
   flex-direction: row;
   position: relative;
+  flex-wrap: wrap;
 }
 .right-align {
   padding-left: 9rem;
@@ -785,9 +789,14 @@
 }
 
 @media (max-width: 768px) {
+  .riders-title {
+    font-family: sans-serif;
+    margin-bottom: 2rem;
+    color: #212121;
+  }
   .carousel-images img {
     height: 10rem;
-    width: 4rem;
+    width: 28%;
   }
 
   .carousel-button {
@@ -796,6 +805,9 @@
 }
 
 @media (max-width: 480px) {
+  .riders-say h1 {
+    font-size: 3rem;
+  }
   .riders-container {
     gap: 1rem; /* Reduce gaps between items */
   }
@@ -813,7 +825,7 @@
   }
 
   .carousel-images img {
-    width: 8rem; /* Smaller carousel images */
+    width: 20%; /* Smaller carousel images */
     height: 10rem;
   }
 }
