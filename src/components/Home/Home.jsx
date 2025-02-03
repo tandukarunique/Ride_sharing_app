@@ -26,6 +26,7 @@ import person4 from "../../assets/Assets/person4.png";
 import person5 from "../../assets/Assets/person5.png";
 import carbg from "../../assets/Assets/carbg.png";
 import phone_bg from "../../assets/Assets/phone_bg.png";
+import FAQSection from "../Faq/Faq";
 
 const Home = () => {
   return (
@@ -253,6 +254,38 @@ const Home = () => {
                   </div>
                 </div>
               </div>
+              <div className="get-container">
+                <img className="carbg" src={carbg} alt="" />
+
+                <img className="phone-bg" src={phone_bg} alt="" />
+                <div className="contents">
+                  <h1 className="phonebg-h1">
+                    Get our ride <br />
+                    sharing app
+                  </h1>
+                  <p>Customizable Discounts and promotions</p>
+                  <p>Essay Driver ratings and reviews</p>
+                  <p>Integrated in-app real-time chat</p>
+                  <p>Dynamic flexible location selection</p>
+                  <p>Guaranteed affordable fixed rates</p>
+                  <p>Accurate real-time tracking</p>
+                  <div className="buttons">
+                    <button className="btnd">
+                      {" "}
+                      <FaUser />
+                      Download rider app
+                    </button>
+                    <button
+                      className="btnd"
+                      style={{ color: "black", backgroundColor: "lightgreen" }}
+                    >
+                      <FaCar /> Download driver app
+                    </button>
+                  </div>
+                </div>
+              </div>
+            <FAQSection/>
+
             </div>
           </div>
         </div>
